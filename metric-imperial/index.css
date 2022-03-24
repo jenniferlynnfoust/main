@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+#inputNum{
+    font-size:60px;
+    font-weight: 900;
+}
+#inputNum{
+width: 200px;
+display: block;
+margin: 22px auto;
+text-align: center;
+}
+.gradient{
+    background-image: linear-gradient(
+  40deg,
+  hsl(185deg 100% 20%) 0%,
+  hsl(178deg 100% 24%) 9%,
+  hsl(168deg 64% 36%) 26%,
+  hsl(151deg 39% 50%) 51%,
+  hsl(120deg 42% 64%) 79%,
+  hsl(86deg 64% 68%) 97%,
+  hsl(63deg 88% 71%) 100%
+);
+color: #fff;
+text-align: center;
+}
+.calculator{
+    background-color: #1F2937;
+    color: #D2D2D2;
+    text-align: center;
+
+}
+.btn-convert{
+    color:#fff;
+    font-weight: bold;
+}
