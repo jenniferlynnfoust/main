@@ -1,0 +1,45 @@
+<!--
+-array to hold all possible chars
+-button to generate 4 random pw options
+-display password options
+-extra-set pw length
+-extra-1 click copy pw to clipboard
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+
+
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="content-container">
+        <div class="container-fluid">
+        <h1>Generate a<br> 
+        <span class="green-text">random password</span></h1>
+        <p class=""md-grey-text>Never use an insecure password again</p>
+        <label class="label" for="pw-length-el">Password length: </label>
+        <input id="pw-length-el" name="pw-length-el" value="14"><br>
+        <button class="pw-generate-el btn-green" onclick="generatePW()"><i class="fa-solid fa-bolt"></i>&nbsp;&nbsp;Generate passwords</button>
+    </div>
+        <hr>
+        <div class="container-fluid">
+            <div class="col">
+                <button class="pw-output-el btn-blackish"><i class="fa-solid fa-ellipsis"></i></button>
+            </div>
+            <br>
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>  
+    <script src="https://kit.fontawesome.com/e251d4b380.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
