@@ -1,0 +1,53 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #D5D4D8;
+    background-color: #273549;
+}
+h1 {
+    color: #ffffff;
+}
+hr {
+    height: 1px;
+    background-color: #2F3E53;
+    border: none;
+}
+label{
+    font-size: smaller;
+}
+.content-container{
+    background-color: #1F2937;
+    padding: 22px;
+}
+.green-text {
+    color: #4ADF86;
+}
+.md-grey-text {
+    color: #d5d4d8;
+}
+.btn-green {
+    background-color: #10B981;
+    color: #ffffff;
+    border: 1px solid#10B981;
+    border-radius: 6px;
+    margin:2px;
+    cursor: pointer;
+    padding: 8px;
+    min-width: 300px;
+}
+.btn-blackish {
+    background-color: #273549;
+    color: #55F991;
+    border: 1px solid #273549;
+    border-radius: 6px;
+    margin:2px;
+    /*cursor: pointer; -- add back with copy function */
+    min-width: 300px;
+    padding:8px;
+}
+.fa-ellipsis {
+    color: #202B3C;
+}
+#pw-length-el {
+    margin: 3px;
+}
