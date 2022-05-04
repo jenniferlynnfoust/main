@@ -59,7 +59,61 @@
 }
 .meet-our-team-grid img{
   width: 200px;
+  height:200px;
+  object-fit: cover;
+
 }
+.affiliations-grid {
+  flex-wrap: wrap;
+  background-color: #ffffff !important;
+  align-items: center;
+}
+.affiliations-grid img{
+  height:140px;
+  padding:22px;
+  transition: width 2s, height 2s, background-color 2s, transform .5s;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.affiliations-grid img:hover{
+  /*transform: scale(110%);*/
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+/*
+.affiliations-grid-item {
+  background: #ffffff;
+  transition: width 2s, height 2s, background-color 2s, transform .5s;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.affiliations-grid-item:hover{
+  *transform: scale(110%);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;}
+*/
+.affiliations-ne-1 {
+  flex-basis: 100%;
+  /*background: green;*/
+}
+.affiliations-ne-1 img{
+  padding: 40px 22px;
+
+}
+.affiliations-ihmc-2 {
+  flex-basis: 100%;
+  /*background: green;*/
+
+}
+.affiliations-dbpedia-3 {
+  flex-basis: 50%;
+  /*background: green;*/
+
+}
+.affiliations-iptc-4 {
+  flex-basis: 50%;
+  /*background: green;*/
+
+}
+
+
     </style>
 
     
@@ -177,6 +231,7 @@
       <h2>Optimizing Image Description</h2>
       <p class="lead">Captioning, Classifying, Labeling, Engineering Knowledge, Machine Learning</p>
       <p>Image description is hard. Despite some remarkable success in many areas of machine learning. Many of the datasets used over the past decade to improve deep learning algorithms, have become corrupted, overused, and stripped of original metadata that might have helped with new directions in contemporary machine learning. To be able to combine all of the metadata clues to help interpret images is important in moving AI to the next level with hybrid techniques around the context and reasoning.</p>
+      <p style="color:red"> two options here - one all grey background, one white containers with headers. grey background can also have headers.</p>
         <!-- 
           <div clss="row">
             <div class="col-lg-12">
@@ -275,15 +330,16 @@
     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 mt-2 text-center overflow-hidden">
       <div class="my-3 p-3">
         <h2 class="display-7">Our team loves what it does</h2>
+        <p style="color:red">(still working in these two sections)</p>
         <p class="lead">Meet our team: Margaret Warren, James Lott, Michael Brunnbauer, Pat Hayes, Tom Eskridge, Christina Gates<br>
         </p>
           <div class=" d-grid gap-2 mt-4 d-md-flex flex-column justify-content-md-center">
-            <div class="meet-our-team-grid">
+            <div class="meet-our-team-grid mb-4 ">
             <img src="marg_bio_pic.jpg">
             <img src="jlott.jpg">
             <img src="michael.jpg">
             <img src="MeInHat.jpg">
-            <img src="teskridge.jpg">
+            <img src="teskridge.jpg" style="">
             <img src="logo_icon.png">
           </div>
 
@@ -298,11 +354,22 @@
       <div class="my-3 py-3">
         <h2 class="display-7">Affiliations</h2>
         <p class="lead">Any information or description here, or just the logos?</p>
-          <a href="https://www.netestate.de/en/" target="_blank"><img src="ne_logo_retina.jpg"></a><br/>
+        <div class="affiliations-grid d-flex p-4">
+          <div class="affiliations-grid-item affiliations-ne-1">
+            <a href="https://www.netestate.de/en/" target="_blank"><img src="ne_logo_retina.jpg"></a><br/>
+          </div>
+          <div class="affiliations-grid-item affiliations-ihmc-2">
           <a href="https://www.ihmc.us/" target="_blank"><img src="ihmc-logo-dark.png"></a><br/>
+        </div>
+        <div class="affiliations-grid-item affiliations-dbpedia-3">
           <a href="https://www.dbpedia.org/" target="_blank"><img src="dbpedia.jpeg"></a><br/>
-          <a href="https://iptc.org/" target="_blank"><img src="iptc_sv_gradient_150x150_400x400.jpg"></a><br/>
+        </div>
+        <div class="affiliations-grid-item affiliations-iptc-4">
+          <!--<a href="https://iptc.org/" target="_blank"><img src="iptc_sv_gradient_150x150_400x400.jpg"></a><br/>-->
           <a href="https://iptc.org/" target="_blank"><img src="iptc.png"></a><br/>
+        </div>
+        
+        </div>
  
 
   
