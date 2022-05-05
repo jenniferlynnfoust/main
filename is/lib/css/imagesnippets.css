@@ -9,35 +9,58 @@
 body {
   font-family: 'Rubik', sans-serif !important;
 }
-
 /* skip to content - accessibility link */
 .skip-to-content-link {
   left: 50%;
   position: absolute;
   transform: translateY(-100%);
 }
-
-/* custom conatiner size */
+/* custome conatiner size */
 .container {
   max-width: 1200px;
 }
-
-/* gradient same is imagesnippets logo */
-.is-gradient {
-  background: rgb(146,88,255);
-  background: linear-gradient(180deg, rgba(146,88,255,1) 0%, rgba(82,163,254,1) 100%);
+/* display full-screen menu with large screen. show small drop-down menu on small screen - icon relocated to the right on small */
+@media screen and (max-width: 900px) {
+  div.full-screen-nav {
+    display: none;
+  }
+  div.collapsed-nav {
+    display: block;
+  }
 }
-/* light shadow */
+@media screen and (min-width: 901px) {
+  div.full-screen-nav {
+    display: block;
+  }
+  div.collapsed-nav {
+    display: none;
+  }
+}
+/* cetner top slogan text when it's above the image */
+@media screen and (max-width: 990px) {
+  .slogan{
+    text-align: center;
+  }
+}
+
 .shadow-custom {
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/******************************************
-footer - social media icon color - 
-this is a font and can be colored/sized 
-as a font 
-******************************************/
+.purple-text {
+  color: #9258ff;
+}
+.blue-text {
+  color: #52a3fe;
+  
+  /* #56a0fe */
+}
+.blue-purple-text {
+  color: #747aff;
+}
+
+/*** footer - social media icon color - this is a font and can be colored/sized as a font ***/
 .bi-twitter, .bi-facebook{
   color: #747aff;
   font-size:2em;
@@ -50,9 +73,18 @@ as a font
   padding:10px;
 }
 
-/******************************************
-Custom site header
-******************************************/
+/* gradient same is imagesnippets logo */
+.is-gradient {
+  background: rgb(146,88,255);
+  background: linear-gradient(180deg, rgba(146,88,255,1) 0%, rgba(82,163,254,1) 100%);
+}
+
+/* img {
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+} */
+
+/*** Custom site header ***/
 /* navigation link and hover colors/behavior */
 nav a:hover{
   background-color: rgba(0, 0, 0, 0.1);
@@ -89,90 +121,25 @@ nav a:active{
 .site-header-img:hover {
   padding: 0 !important;
 }
-/* display full-screen menu with large screen. show small drop-down menu on small screen - icon relocated to the right on small */
-@media screen and (max-width: 900px) {
-  div.full-screen-nav {
-    display: none;
-  }
-  div.collapsed-nav {
-    display: block;
-  }
-}
-@media screen and (min-width: 901px) {
-  div.full-screen-nav {
-    display: block;
-  }
-  div.collapsed-nav {
-    display: none;
-  }
-}
-/* center top slogan text when it's above the image */
-@media screen and (max-width: 990px) {
-  .slogan{
-    text-align: center;
-  }
-}
 
-/******************************************
-Team Section
-******************************************/
 
-.meet-our-team-grid figure {
-  display: inline-block
-}
-.meet-our-team-grid figure img{
-  width: 200px;
-  height:200px;
-  margin: 4px 2px;
-  border-radius: 2px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-}
-.meet-row img{
-  width: 100%;
-  border-radius: 50%;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-}
-figcaption { padding:10px;
-  text-align: center;
-}
 
-/******************************************
-Affiliations Section
-******************************************/
-.affiliations-grid {
-  background-color: #ffffff !important;
-  padding:22px;
-  flex-direction: column;
-  align-items: center;
-}
-.affiliations-grid img{
-  width:100%;
-  padding:5px;
-  margin:3px;
-  transition: box-shadow 0.3s ease-in-out;
-}
-.affiliations-grid img:hover{
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
-}
-.affiliations-grid img:focus{
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
-}
-.smaller-image {
-  width: 65% !important;
-}
+/*
+ * Extra utilities
+ 
 
-/* adjusting width of affiliation logos for smaller screens */
-@media screen and (max-width: 767px) {
-  .smaller-image {
-    width: 25% !important;
-  }
-  .affiliations-grid img{
-    width: 50%;
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
   }
 }
-/******************************************
-Custom Buttons - based on Bootstrap buttons
-******************************************/
+*/
+
+
+/*** Custom Buttons ***/
 /* purple button */
 .btn-purple {
   color: #fff;
@@ -342,4 +309,44 @@ Custom Buttons - based on Bootstrap buttons
 .btn-outline-blue:disabled, .btn-outline-blue.disabled {
   color: #0d6efd;
   background-color: transparent;
+}
+
+/*** Team Section ***/
+.meet-our-team-grid figure {
+  display: inline-block
+}
+.meet-our-team-grid figure img{
+  width: 200px;
+  height:200px;
+  margin: 4px 2px;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.meet-row img{
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+figcaption { padding:10px;
+  text-align: center;
+}
+
+/*** Affiliations Section ***/
+.affiliations-grid {
+  background-color: #ffffff !important;
+  padding:22px;
+  flex-direction: column;
+  align-items: center;
+}
+.affiliations-grid img{
+  width:100%;
+  padding:5px;
+  margin:3px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.affiliations-grid img:hover{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+.affiliations-grid img:focus{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
 }
