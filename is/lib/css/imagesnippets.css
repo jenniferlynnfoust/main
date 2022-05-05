@@ -140,7 +140,6 @@ figcaption { padding:10px;
 Affiliations Section
 ******************************************/
 .affiliations-grid {
-  background-color: #ffffff !important;
   padding:22px;
   flex-direction: column;
   align-items: center;
@@ -149,6 +148,7 @@ Affiliations Section
   width:100%;
   padding:5px;
   margin:3px;
+  background-color: #ffffff;
   transition: box-shadow 0.3s ease-in-out;
 }
 .affiliations-grid img:hover{
