@@ -31,7 +31,7 @@ return (
    // <button onClick={() => this.setState({ liked: true })}>
    //   Like
    // </button>
-
+<div id="header">
    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark" aria-label="Third navbar example">
    <div class="container-fluid">
      <a class="navbar-brand" href="#">JF</a>
@@ -42,20 +42,20 @@ return (
      <div class="collapse navbar-collapse" id="navbarsExample03">
        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
          <li class="nav-item">
-           <a class="nav-link active" aria-current="page" href="#">Home</a>
+           <a class="nav-link active" aria-current="page" href="/main/index.html">Home</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="metric-imperial/index.html">Metric/Imperial</a>
+           <a class="nav-link" href="/main/metric-imperial/index.html">Metric/Imperial</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="space-station/index.html">Space Station</a>
+           <a class="nav-link" href="/main/space-station/index.html">Space Station</a>
          </li>
          <li class="nav-item dropdown">
            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Some More</a>
            <ul class="dropdown-menu" aria-labelledby="dropdown03">
-             <li><a class="dropdown-item" href="password-generator/index.html">Password Generator</a></li>
-             <li><a class="dropdown-item" href="space-station/index.html">Space Station</a></li>
-             <li><a class="dropdown-item" href="space-station/index.html">Space Station</a></li>
+             <li><a class="dropdown-item" href="/main/password-generator/index.html">Password Generator</a></li>
+             <li><a class="dropdown-item" href="/main/space-station/index.html">Space Station</a></li>
+             <li><a class="dropdown-item" href="/main/space-station/index.html">Space Station</a></li>
            </ul>
          </li>
        </ul>
@@ -66,7 +66,8 @@ return (
 
      </div>
    </div>
- </nav>
+      </nav>
+      </div>
    
 
  );
